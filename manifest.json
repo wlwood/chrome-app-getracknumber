@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2,
+    "name": "抓取跟踪号",
+    "version": "1.0",
+    "description": "抓取跟踪号",
+    "background": {
+        "scripts": [
+            "src/js/async.min.js",
+            "src/js/jquery.min.js",
+            "src/js/background.js"
+        ]
+    },
+    "permissions": ["storage", "tabs", "contextMenus","notifications" ,"https://*/" , "http://*/"] ,
+    "browser_action": {
+        "default_icon": {
+            "38": "src/images/128_on.png"
+        },
+        "default_title": "抓取跟踪号",
+        "default_popup": "popup.html"
+    },
+
+    "update_url": "https://52.90.164.20/service/update/crx",
+    "icons": {
+        "16": "src/images/128_on.png",
+        "48": "src/images/128_on.png",
+        "128": "src/images/128_on.png"
+    }
+
+}
+
+
